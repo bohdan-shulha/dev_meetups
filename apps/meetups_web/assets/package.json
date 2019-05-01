@@ -1,4 +1,6 @@
 {
+  "name": "meetups_web",
+  "version": "0.0.1",
   "repository": {},
   "license": "MIT",
   "scripts": {
@@ -7,7 +9,10 @@
   },
   "dependencies": {
     "phoenix": "file:../../../deps/phoenix",
-    "phoenix_html": "file:../../../deps/phoenix_html"
+    "phoenix_html": "file:../../../deps/phoenix_html",
+    "phoenix_live_view": "file:../../../deps/phoenix_live_view",
+    "sass-loader": "^7.1.0",
+    "typed.js": "^2.0.10"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

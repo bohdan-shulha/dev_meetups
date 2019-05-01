@@ -14,7 +14,10 @@ config :meetups_web, MeetupsWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "B9g9c4GVZXbv17x3xKObvEXwphScy6IEtaq1TCKfxfjLe3eFs0IYFWgGJC5UtN5X",
   render_errors: [view: MeetupsWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: MeetupsWeb.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: MeetupsWeb.PubSub, adapter: Phoenix.PubSub.PG2],
+  live_view: [
+    signing_salt: "ov6mCcrCYfpLRLgWzgjqkyT+wqmL9DP6"
+  ]
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.

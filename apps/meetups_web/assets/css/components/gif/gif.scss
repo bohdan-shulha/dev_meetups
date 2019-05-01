@@ -1,0 +1,84 @@
+.g-greg--run {
+  position: absolute;
+  top: rem(305);
+  left: -35vw;
+}
+
+.g-greg--stand {
+  position: absolute;
+  top: 30rem;
+  left: 30rem;
+}
+
+.run {
+  left: 30rem;
+  transition: 2s;
+  transition-timing-function: linear;
+}
+
+.greg-msg-cont {
+  padding-left: 6rem;
+  position: absolute;
+  top: 20rem;
+  left: 28rem;
+}
+
+.greg-msg {
+  width: 38rem;
+  height: rem(74);
+}
+
+@media screen and (min-width: 90em) {
+  .g-greg--run {
+    top: rem(370);
+  }
+
+  .g-greg--stand {
+    top: 37rem;
+    left: 50rem;
+  }
+
+  .run {
+    left: 50rem;
+  }
+
+  .greg-msg-cont {
+    top: 26rem;
+    left: 47rem;
+  }
+}
+
+@media screen and (min-width: 120em) {
+  .g-greg--run {
+    top: rem(385);
+    left: -35vw;
+    height: 10rem;
+  }
+
+  .g-greg--stand {
+    top: rem(375);
+    left: 65rem;
+    height: 10rem;
+  }
+
+  .run {
+    left: 65rem;
+  }
+
+  .greg-msg-cont {
+    top: 26rem;
+    left: 62rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .g-greg--run {
+    left: -40vw;
+  }
+
+  .run {
+    left: 65rem;
+    transition: 2s;
+    transition-timing-function: linear;
+  }
+}

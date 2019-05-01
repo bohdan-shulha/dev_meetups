@@ -1,0 +1,13 @@
+<div class="card login-form-container">
+  <form class="card-body">
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-Mail">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Log In</button>
+  </form>
+</div>

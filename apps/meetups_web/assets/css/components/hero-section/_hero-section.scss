@@ -1,0 +1,16 @@
+.hero-section-wrapper {
+  background-color: $primaryBg;
+
+}
+
+.hero-section {
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 60em) {
+  .hero-section {
+    display: block;
+    max-width: rem(960);
+    margin: 0 auto;
+  }
+}

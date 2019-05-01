@@ -1,0 +1,18 @@
+.terminal {
+  background: #000000 url("../images/terminal.png") no-repeat;
+  width: rem(741);
+  height: rem(739);
+  margin: 0 auto;
+  padding: 3rem rem(23) 1rem rem(6);
+
+  &__inner {
+    height: rem(686);
+    background-color: #000000;
+    padding: 1rem;
+    color: #ffffff;
+
+    p {
+      font-family: Lucida Console, serif;
+    }
+  }
+}

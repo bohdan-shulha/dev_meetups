@@ -1,0 +1,14 @@
+/* This file is for your main application css. */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+    min-height: 100vh;
+}
+
+.login-form-container {
+    width: 300px;
+    margin: auto auto;
+    top: 50%;
+    translate: -50%;
+}

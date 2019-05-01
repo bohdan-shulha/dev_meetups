@@ -1,0 +1,43 @@
+.nav__nav-item {
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.nav__link {
+  text-transform: uppercase;
+}
+
+.nav--desktop {
+  display: none;
+}
+
+@media screen and (min-width: 60em) {
+  .nav {
+    align-items: center;
+  }
+
+  .nav--mobile {
+    display: none;
+  }
+
+  .nav--desktop {
+    display: flex;
+  }
+
+  .nav__nav-list {
+    display: flex;
+  }
+
+  .nav__nav-item {
+    margin-bottom: 0;
+    margin-right: 6rem;
+    list-style: none;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

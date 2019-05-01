@@ -1,0 +1,127 @@
+:root {
+  font-size: 62.5%;
+}
+
+@function rem($n) {
+  @return $n / 10 + 0rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+// Gutter
+.g {
+  &-bottom {
+    &-sm {
+      margin-bottom: 2rem;
+    }
+
+    &-md {
+      margin-bottom: 4rem;
+    }
+
+    &-lg {
+      margin-bottom: 6rem;
+    }
+
+    &-xl {
+      margin-bottom: 8rem;
+    }
+  }
+
+  &-top {
+    &-sm {
+      margin-bottom: 2rem;
+    }
+
+    &-md {
+      margin-bottom: 4rem;
+    }
+
+    &-lg {
+      margin-bottom: 6rem;
+    }
+
+    &-xl {
+      margin-bottom: 8rem;
+    }
+  }
+
+  &-left {
+    &-sm {
+      margin-bottom: 2rem;
+    }
+
+    &-md {
+      margin-bottom: 4rem;
+    }
+
+    &-lg {
+      margin-bottom: 6rem;
+    }
+
+    &-xl {
+      margin-bottom: 8rem;
+    }
+  }
+
+  &-right {
+    &-sm {
+      margin-bottom: 2rem;
+    }
+
+    &-md {
+      margin-bottom: 4rem;
+    }
+
+    &-lg {
+      margin-bottom: 6rem;
+    }
+
+    &-xl {
+      margin-bottom: 8rem;
+    }
+  }
+}
+
+// child position
+.ch-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//Show/Hide
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  transition: 2s;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+
+.nes-table.is-dark::before {
+  position: static;
+}

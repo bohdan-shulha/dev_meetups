@@ -1,0 +1,50 @@
+.schedule-section--mobile {
+  background: #424242 url("../images/forest.jpg") center no-repeat;
+  background-size: cover;
+
+  .schedule-section {
+    min-height: 100vh;
+    padding: 2rem;
+    max-width: rem(960);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .schedule-section__title {
+    text-transform: uppercase;
+    color: $primaryTitle;
+    text-align: center;
+    background-color: $secondaryBg;
+    padding: 0 1rem;
+  }
+}
+
+.schedule-section--desktop {
+  display: none;
+}
+
+@media screen and (min-width: 60em) {
+  .schedule-section {
+    &--mobile {
+      display: none;
+    }
+    &--desktop {
+      display: block;
+      background: #424242 url("../images/win95.jpg") center center no-repeat;
+      background-size: 100% 100%;
+
+      .schedule-section {
+        min-height: 100vh;
+        padding: 2rem;
+        max-width: rem(860);
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 90em) {
+}

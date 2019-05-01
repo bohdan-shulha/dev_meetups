@@ -41,6 +41,8 @@ defmodule MeetupsWeb do
       import MeetupsWeb.ErrorHelpers
       import MeetupsWeb.Gettext
       alias MeetupsWeb.Router.Helpers, as: Routes
+
+      import Phoenix.LiveView, only: [live_render: 2, live_render: 3]
     end
   end
 
@@ -49,6 +51,8 @@ defmodule MeetupsWeb do
       use Phoenix.Router
       import Plug.Conn
       import Phoenix.Controller
+
+      import Phoenix.LiveView.Router
     end
   end
 

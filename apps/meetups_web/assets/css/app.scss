@@ -1,0 +1,21 @@
+/*
+   Import partials below
+*/
+@import "./normalize";
+@import "./var";
+@import "./utils";
+@import "./components/hero-section/hero-section";
+@import "./components/logo/logo";
+@import "./components/nav/nav";
+@import "./components/site-header/site-header";
+@import "./components/masthead/masthead";
+@import "./components/btn/btn";
+@import "./components/btn/btn-arrow-down";
+@import "./components/gif/gif.scss";
+@import "./components/schedule-section/schedule-section.scss";
+@import "./components/terminal/terminal";
+@import "./components/schedule/schedule";
+@import "./components/registration-section/registration-section";
+
+
+@import "../../../../deps/phoenix_live_view/assets/css/live_view.css";

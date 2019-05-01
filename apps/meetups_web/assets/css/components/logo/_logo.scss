@@ -1,0 +1,54 @@
+.logo {
+  font-size: 0;
+  padding-left: 1.9rem;
+  text-transform: uppercase;
+
+  &--color-primary {
+    color: $secondaryTitle;
+    font-size: rem(24);
+  }
+
+  &--color-secondary {
+    color: $semiTitle;
+    font-size: rem(24);
+  }
+}
+
+.logo--desktop {
+  display: none;
+}
+
+@media screen and (min-width: 48em) {
+  .logo {
+    &--color-primary {
+      font-size: rem(36);
+    }
+
+    &--color-secondary {
+      font-size: rem(36);
+    }
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .logo {
+    margin: 0;
+    padding: 0;
+
+    &--color-primary {
+      font-size: rem(28);
+    }
+
+    &--color-secondary {
+      font-size: rem(28);
+    }
+  }
+
+  .logo--mobile {
+    display: none;
+  }
+
+  .logo--desktop {
+    display: block;
+  }
+}

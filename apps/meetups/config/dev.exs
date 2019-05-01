@@ -7,7 +7,7 @@ use Mix.Config
 # Configure your database
 config :meetups, Meetups.Repo,
   username: "root",
-  password: "",
+  # password: "",
   database: "meetups_dev",
   hostname: "localhost",
   pool_size: 10

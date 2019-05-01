@@ -1,35 +1,299 @@
-<section class="phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
-  <p>A productive web framework that<br/>does not compromise speed or maintainability.</p>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
+    <meta name="apple-mobile-web-app-title" content="Dev.meetups()" />
+    <meta
+      name="msapplication-TileImage"
+      content="images/favicons/favicon.png"
+    />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" type="image/png" href="images/favicons/favicon.png"/>
 
-<section class="row">
-  <article class="column">
-    <h2>Resources</h2>
-    <ul>
-      <li>
-        <a href="https://hexdocs.pm/phoenix/overview.html">Guides &amp; Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix/blob/v1.4/CHANGELOG.md">v1.4 Changelog</a>
-      </li>
-    </ul>
-  </article>
-  <article class="column">
-    <h2>Help</h2>
-    <ul>
-      <li>
-        <a href="https://elixirforum.com/c/phoenix-forum">Forum</a>
-      </li>
-      <li>
-        <a href="https://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on Freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">Twitter @elixirphoenix</a>
-      </li>
-    </ul>
-  </article>
-</section>
+    <title>Dev.meetups()</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+    <!--<link rel="stylesheet" href="css/styles.min.css" />-->
+  </head>
+  <body>
+    <div class="hero-section-wrapper">
+      <section class="hero-section ch-middle">
+        <header class="site-header">
+          <h1 class="logo g-bottom-lg js-logo logo--mobile"></h1>
+          <h1 class="logo logo--desktop">
+            <a href="">
+              <span class="logo--color-primary">Dev.</span>
+              <span class="logo--color-secondary">meetups()</span>
+            </a>
+          </h1>
+          <nav class="nav nav--mobile">
+            <ul class="nav__nav-list">
+              <li class="nav__nav-item">
+                <a href="#registration" class="nav__link js-nav__link-meetings"></a>
+              </li>
+              <li class="nav__nav-item">
+                <a href="" class="nav__link js-nav__link-about-us"></a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="nav nav--desktop">
+            <ul class="nav__nav-list">
+              <li class="nav__nav-item">
+                <a href="#registration" class="nav__link">registration</a>
+              </li>
+              <li class="nav__nav-item">
+                <a href="" class="nav__link">about us</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="masthead">
+          <div class="masthead__content">
+            <img
+              src="./images/greg_run.gif"
+              alt="greg"
+              height="80px"
+              class="g-greg--run js-g-greg--run"
+            />
+            <img
+              src="./images/greg_stand.gif"
+              alt="greg"
+              height="80px"
+              class="g-greg--stand js-g-greg--stand d-none"
+            />
+            <div class="message-left greg-msg-cont js-greg-msg hide">
+              <div class="nes-balloon from-left greg-msg">
+                <p class="js-greg-msg-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn-arrow-down btn js-btn-arrow-down hide">
+          <img src="./images/arrow.png" alt="arrow" />
+        </button>
+      </section>
+    </div>
+    <div class="schedule-section-wrapper schedule-section--mobile">
+      <section class="schedule-section">
+        <h2 class="schedule-section__title">Nearest meetings!</h2>
+
+        <div class="nes-table-responsive schedule">
+          <table class="nes-table is-bordered is-dark schedule__table">
+            <thead>
+              <tr>
+                <th>Event date</th>
+                <th class="schedule__event-date">31.03.2019</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Starts</td>
+                <td class="schedule__event-start">12:00</td>
+              </tr>
+              <tr>
+                <td>Place</td>
+                <td class="schedule__event-place">Artinov</td>
+              </tr>
+              <tr>
+                <td class="schedule__topic">CSS Grid Layout vs Flexbox</td>
+                <td class="schedule__speaker">
+                  Andrii<br />Slobo<wbr />dianiuk
+                </td>
+              </tr>
+              <tr>
+                <td class="schedule__topic">GraphQL for beginners</td>
+                <td class="schedule__speaker">Bohdan Shulha</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="nes-table-responsive schedule">
+          <table class="nes-table is-bordered is-dark schedule__table">
+            <thead>
+              <tr>
+                <th>Event date</th>
+                <th class="schedule__event-date">31.03.2019</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Starts</td>
+                <td class="schedule__event-start">12:00</td>
+              </tr>
+              <tr>
+                <td>Place</td>
+                <td class="schedule__event-place">Artinov</td>
+              </tr>
+              <tr>
+                <td class="schedule__topic">CSS Grid Layout vs Flexbox</td>
+                <td class="schedule__speaker">
+                  Andrii<br />Slobo<wbr />dianiuk
+                </td>
+              </tr>
+              <tr>
+                <td class="schedule__topic">GraphQL for beginners</td>
+                <td class="schedule__speaker">Bohdan Shulha</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <div class="schedule-section-wrapper schedule-section--desktop">
+      <section class="schedule-section">
+        <div class="terminal">
+          <div class="terminal__inner">
+            <p class="terminal__inner-request">
+              C:\Users\%UserName%><span class="js-terminal-msg"></span>
+            </p>
+
+            <div
+              class="terminal__inner-response js-terminal__inner-response d-none"
+            >
+              <div class="nes-table-responsive schedule">
+                <table class="nes-table is-bordered is-dark schedule__table">
+                  <thead>
+                    <tr>
+                      <th>Event date</th>
+                      <th class="schedule__event-date">31.03.2019</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Starts</td>
+                      <td class="schedule__event-start">12:00</td>
+                    </tr>
+                    <tr>
+                      <td>Place</td>
+                      <td class="schedule__event-place">Artinov</td>
+                    </tr>
+                    <tr>
+                      <td class="schedule__topic">
+                        CSS Grid Layout vs Flexbox
+                      </td>
+                      <td class="schedule__speaker">
+                        Andrii<br />Slobo<wbr />dianiuk
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="schedule__topic">GraphQL for beginners</td>
+                      <td class="schedule__speaker">Bohdan Shulha</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="nes-table-responsive schedule">
+                <table class="nes-table is-bordered is-dark schedule__table">
+                  <thead>
+                    <tr>
+                      <th>Event date</th>
+                      <th class="schedule__event-date">31.03.2019</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Starts</td>
+                      <td class="schedule__event-start">12:00</td>
+                    </tr>
+                    <tr>
+                      <td>Place</td>
+                      <td class="schedule__event-place">Artinov</td>
+                    </tr>
+                    <tr>
+                      <td class="schedule__topic">
+                        CSS Grid Layout vs Flexbox
+                      </td>
+                      <td class="schedule__speaker">
+                        Andrii<br />Slobo<wbr />dianiuk
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="schedule__topic">GraphQL for beginners</td>
+                      <td class="schedule__speaker">Bohdan Shulha</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>C:\Users\%UserName%>_</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="registration-section-wrapper" id="registration">
+      <div class="registration-section">
+        <section class="message-left registration-form__info-msg g-bottom-sm">
+          <!-- Balloon -->
+          <div class="nes-balloon from-left info-msg__ballon">
+            <p class="info-msg">Hey! There are a lot of sits!</p>
+          </div>
+          <i class="nes-bcrikko"></i>
+        </section>
+
+        <section class="registration-section__content">
+
+
+          <button
+            type="button"
+            class="nes-btn is-warning registration-section__show-schedule-btn js-show-schedule-btn"
+          >
+          Show the nearest meetup
+        </button>
+          <div
+            class="nes-table-responsive  registration-section__schedule g-bottom-lg d-none js-schedule"
+          >
+            <table class="nes-table is-bordered is-dark">
+              <thead>
+                <tr>
+                  <th>Event date</th>
+                  <th class="schedule__event-date">31.03.2019</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Starts</td>
+                  <td class="schedule__event-start">12:00</td>
+                </tr>
+                <tr>
+                  <td>Place</td>
+                  <td class="schedule__event-place">Artinov</td>
+                </tr>
+                <tr>
+                  <td class="schedule__topic">CSS Grid Layout vs Flexbox</td>
+                  <td class="schedule__speaker">
+                    Andrii<br />Slobo<wbr />dianiuk
+                  </td>
+                </tr>
+                <tr>
+                  <td class="schedule__topic">GraphQL for beginners</td>
+                  <td class="schedule__speaker">Bohdan Shulha</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="registration-form-wrapper">
+            <%= live_render(@conn, MeetupsWeb.RegisterFormLive) %>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <!--<script src="js/scripts.min.js"></script>-->
+  </body>
+</html>

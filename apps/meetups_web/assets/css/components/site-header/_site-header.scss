@@ -1,0 +1,13 @@
+.site-header {
+    text-align: center;
+}
+
+
+@media screen and (min-width: 60em) {
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 5rem;
+      height: 9.2rem;
+    }
+  }

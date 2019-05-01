@@ -1,0 +1,68 @@
+.registration-section-wrapper {
+  min-height: 100vh;
+  background: #000000 url("../images/city.png") no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.registration-section {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.registration-section__show-schedule-btn,
+.registration-form__info-msg {
+  display: none;
+}
+
+.registration-form-wrapper {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.registration-form__title {
+  font-size: 2rem;
+}
+
+.required-name,
+.required-last-name,
+.required-email {
+  color: $errorColor;
+}
+
+@media screen and (min-width: 60em) {
+  .registration-section-wrapper {
+    display: block;
+  }
+
+  .registration-section {
+    min-height: 100vh;
+  }
+
+  .registration-section__show-schedule-btn,
+  .registration-form__info-msg {
+    display: block;
+  }
+
+  .registration-section__show-schedule-btn {
+    margin: 0 auto 2rem;
+  }
+
+  .registration-form__info-msg {
+    position: relative;
+    padding-top: 6rem;
+  }
+
+  .info-msg__ballon {
+    position: absolute;
+    top: 0;
+    left: 12rem;
+  }
+}
+
+@media screen and (min-width: 121em) {
+  .registration-section-wrapper {
+    background-size: cover;
+  }
+}
